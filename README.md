@@ -57,6 +57,7 @@
 > Better security. Not possible for the 
     end user to reach
     any other file. 
+    
 * Should I use ORM (Doctrine) or DBAL (PDO)
 
 > Initially, in the infancy of the framework, it makes sense to
