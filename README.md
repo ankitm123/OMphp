@@ -65,6 +65,7 @@
        an ORM like doctrine might be a better choice. With caching, the speed
        should be about the same as PDO, and it will help the user to write
        better complex queries (Is ORM an adapter pattern?)
+       
 * How does Autoloading work?
 
-> To autoload files using composer, just add them to the composer.json file.        
+> To autoload files using composer, just add them to the composer.json file, and use the psr-4 key.        
