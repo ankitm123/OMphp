@@ -37,6 +37,7 @@
   + Open this file using your favourite text editor (emacs or vim, 
   if you do not use any of these, your cat might judge you) /etc/apache2/sites-enabled/000-default.conf 
   + And add the following lines:
+  
      ```
      <Directory /var/www/html>
           Options Indexes FollowSymLinks MultiViews
@@ -45,6 +46,7 @@
           allow from all
      </Directory>
      ```
+  
   + Restart apache2, and create your .htaccess file in the web accessible folder.   
 ### Some question in my mind, and their attempted answers ###
 * Why use front end design pattern?
