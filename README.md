@@ -49,7 +49,10 @@ go with a faster DBAL like PDO (cannot see the point of using the DBAL from doct
 * Composer not working (connection issue) - remember to cite sources:
   + Edit the /etc/gai.conf file, and uncomment the following line
    
-   > precedence ::ffff:0:0/96  100
+   ```
+   precedence ::ffff:0:0/96  100
+   
+   ```
    
 * Setting up your localhost to enable mod_rewrite (ubuntu 16.04)
   + First install apache2 (sudo apt-get install apache2)
