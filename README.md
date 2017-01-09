@@ -15,7 +15,7 @@
 - [ ] Write a small app so that users can test it
 - [ ] Write a simple unit test to test the framework functions (before writing the functions themselves)
 
-## Design Pattern used (till now -subject to change anytime) ##
+## Design Pattern / Principles used (till now -subject to change anytime) ##
 * Front Design pattern (All requests are routed to only one file in the webroot)
 * MVC (Model View Controller) - Separation of concerns - Separate logic from data and view
 * To implement - Convention over configurations ()
