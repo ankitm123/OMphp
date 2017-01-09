@@ -5,6 +5,16 @@
 * Ultimately, make it a good framework for an e-commerce platform
 * Have some fun!
 
+## Task List ##
+
+- [x] Create a git repository
+- [x] Create a directory structure
+- [ ] Implement MVC architecture
+- [ ] Fix routing (Using symphony routing component, need to find something better or faster)
+- [ ] Port all framework related functions to a controller directory inside the framework sub-directory  
+- [ ] Write a small app so that users can test it
+- [ ] Write a simple unit test to test the framework functions (before writing the functions themselves)
+
 ## What I have till now ##
 ### Directory structure ###
 * cache
