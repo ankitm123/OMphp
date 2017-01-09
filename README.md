@@ -11,6 +11,8 @@
   * empty directory at this point. Will 
   be useful when using an ORM, 
   like doctrine (data-mapper) or eloquent (active record) 
+* config
+  * config.php: This file returns the database info and other defined constants
 * framework
   * At this point empty. Core framework files will be put here. 
   * Still need to figure out the sub-directory structure, I will leave that for the smarter me.   
