@@ -30,10 +30,10 @@
     
 ### Issues and fixes ###
 * Composer not working (connection issue) - remember to cite sources:
-  + Disabling ipv6 did the trick for me. The steps for ubuntu 16.04 are:
-    1. net.ipv6.conf.all.disable_ipv6 = 1
-    2. net.ipv6.conf.default.disable_ipv6 = 1
-    3. net.ipv6.conf.lo.disable_ipv6 = 1
+  + Edit the /etc/gai.conf file, and uncomment the following line
+   
+   > precedence ::ffff:0:0/96  100
+   
 * Setting up your localhost to enable mod_rewrite (ubuntu 16.04)
   + First install apache2 (sudo apt-get install apache2)
   + Then enable mod_rewrite module (sudo a2enmod rewrite)
