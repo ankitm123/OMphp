@@ -53,10 +53,12 @@
   + Restart apache2, and create your .htaccess file in the web accessible folder.   
 ### Some question in my mind, and their attempted answers ###
 * Why use front end design pattern?
+
 > Better security. Not possible for the 
     end user to reach
     any other file. 
 * Should I use ORM (Doctrine) or DBAL (PDO)
+
 > Initially, in the infancy of the framework, it makes sense to
        use PDOs. They are faster, and the author has some
        experience writing them. As the size of the database increases,
@@ -64,4 +66,5 @@
        should be about the same as PDO, and it will help the user to write
        better complex queries (Is ORM an adapter pattern?)
 * How does Autoloading work?
+
 > To autoload files using composer, just add them to the composer.json file.        
