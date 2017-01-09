@@ -3,6 +3,7 @@
 * Attempt to understand php more
 * Better understanding of MVC framework and other design patterns
 * Ultimately, make it a good framework for an e-commerce platform
+* Have some fun!
 
 ## What I have till now ##
 ### Directory structure ###
