@@ -24,6 +24,7 @@
     * Place to put your unit tests
 * vendor
     * Composer installs the dependency in this directory.
+    
 ### Issues and fixes ###
 * Composer not working (connection issue) - remember to cite sources:
   + Disabling ipv6 did the trick for me. The steps for ubuntu 16.04 are:
