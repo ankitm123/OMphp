@@ -21,6 +21,10 @@
 * To implement - Convention over configurations ()
 * Debating whether to use Active Record Pattern (Eloquent) or Data mapper (Doctrine2). Might
 go with a faster DBAL like PDO (cannot see the point of using the DBAL from doctrine).
+* Defining database class as abstract. The reasoning behind this is that database class itself not 
+instantiated, but child classes like MySql are.
+* Might use interface for payment class, this would allow the users to define their own logic.
+
 
 ## What I have till now ##
 ### Directory structure ###
