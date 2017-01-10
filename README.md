@@ -14,6 +14,7 @@
 - [ ] Port all framework related functions to a controller directory inside the framework sub-directory  
 - [ ] Write a small app so that users can test it
 - [ ] Write a simple unit test to test the framework functions (before writing the functions themselves)
+- [ ] Use PHPMD (PHP Mess Detector) to analyze the project's cyclomatic complexity score
 
 ## Design Pattern / Principles used (till now -subject to change anytime) ##
 * Front Design pattern (All requests are routed to only one file in the webroot)
