@@ -40,6 +40,7 @@ class ComposerStaticInitb7984fee1cc33b28360319c3237990bb
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Config\\' => 25,
@@ -48,6 +49,7 @@ class ComposerStaticInitb7984fee1cc33b28360319c3237990bb
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'PDepend\\' => 8,
         ),
         'M' => 
         array (
@@ -153,6 +155,10 @@ class ComposerStaticInitb7984fee1cc33b28360319c3237990bb
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
+        'Symfony\\Component\\DependencyInjection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dependency-injection',
+        ),
         'Symfony\\Component\\Debug\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
@@ -172,6 +178,10 @@ class ComposerStaticInitb7984fee1cc33b28360319c3237990bb
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'PDepend\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pdepend/pdepend/src/main/php/PDepend',
         ),
         'Monolog\\' => 
         array (
@@ -236,6 +246,10 @@ class ComposerStaticInitb7984fee1cc33b28360319c3237990bb
             'Parsedown' => 
             array (
                 0 => __DIR__ . '/..' . '/erusev/parsedown',
+            ),
+            'PHPMD\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpmd/phpmd/src/main/php',
             ),
         ),
         'M' => 

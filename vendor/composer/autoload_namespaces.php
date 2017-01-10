@@ -12,6 +12,7 @@ return array(
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src'),
     'PhpCollection' => array($vendorDir . '/phpcollection/phpcollection/src'),
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),
+    'PHPMD\\' => array($vendorDir . '/phpmd/phpmd/src/main/php'),
     'Metadata\\' => array($vendorDir . '/jms/metadata/src'),
     'KevinGH\\Version' => array($vendorDir . '/kherge/version/src/lib'),
     'JMS\\Serializer' => array($vendorDir . '/jms/serializer/src'),
