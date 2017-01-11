@@ -9,7 +9,12 @@
 
 - [x] Create a git repository
 - [x] Create a directory structure
+- [ ] Strictly follow PSR naming conventions
 - [ ] Implement MVC architecture
+- [ ] Use HTTPFoundation from Symphony
+- [ ] Write the routing functionality (from scratch)
+- [ ] Use Swiftmailer (MIT license) 
+
 - [ ] Fix routing (Using symphony routing component, need to find something better or faster)
 - [ ] Port all framework related functions to a controller directory inside the framework sub-directory  
 - [ ] Write a small app so that users can test it
@@ -25,6 +30,7 @@ go with a faster DBAL like PDO (cannot see the point of using the DBAL from doct
 * Defining database class as abstract. The reasoning behind this is that database class itself not 
 instantiated, but child classes like MySql are.
 * Might use interface for payment class, this would allow the users to define their own logic.
+
 
 
 ## What I have till now ##
