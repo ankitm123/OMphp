@@ -1,10 +1,18 @@
 # One more PHP framework #
 ## Motivation ##
-* Attempt to understand php more
+* Attempt to understand php better
 * Better understanding of MVC framework and other design patterns
 * Ultimately, make it a good framework for an e-commerce platform
 * Have some fun!
 
+## Framework components ##
+Tentative list (subject to change):
+* Request and Response handling: Symphony Foundation
+* Routing: FastRoute
+* Templating: Twig
+* Handling configuration: werx
+* Email: Swiftmailer
+* Validation: Particle
 ## Task List ##
 
 - [x] Create a git repository

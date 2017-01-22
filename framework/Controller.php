@@ -5,6 +5,15 @@
      * Date: 1/10/17
      * Time: 8:06 PM
      */
-    class Controller{
+    namespace OMF\Controller;
 
+    class Controller{
+        public function __construct()
+        {
+
+        }
+
+        protected function parseURL(){
+            
+        }
     }
