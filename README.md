@@ -18,7 +18,7 @@ Tentative list (subject to change):
 - [x] Create a directory structure
 - [ ] Strictly follow PSR naming conventions
 - [ ] Implement MVC architecture
-- [ ] Use HTTPFoundation from Symphony
+- [x] Use HTTPFoundation from Symphony
 - [ ] Use Swiftmailer (MIT license) 
 - [ ] Fix routing (Using symphony routing component, need to find something better or faster)
 - [ ] Port all framework related functions to a controller directory inside the framework sub-directory  
