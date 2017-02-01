@@ -13,6 +13,7 @@ Tentative list (subject to change):
 * Handling configuration: Werx
 * Email: Swiftmailer
 * Validation: Particle
+
 ## Task List ##
 - [x] Create a git repository
 - [x] Create a directory structure
