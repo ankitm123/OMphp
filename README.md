@@ -20,7 +20,6 @@ Tentative list (subject to change):
 - [ ] Implement MVC architecture
 - [x] Use HTTPFoundation from Symphony
 - [ ] Use Swiftmailer (MIT license) 
-- [ ] Fix routing (Using symphony routing component, need to find something better or faster)
 - [ ] Port all framework related functions to a controller directory inside the framework sub-directory  
 - [ ] Write a small app so that users can test it
 - [ ] Write a simple unit test to test the framework functions (before writing the functions themselves)
