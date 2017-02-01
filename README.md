@@ -10,19 +10,16 @@ Tentative list (subject to change):
 * Request and Response handling: Symphony Foundation
 * Routing: FastRoute
 * Templating: Twig
-* Handling configuration: werx
+* Handling configuration: Werx
 * Email: Swiftmailer
 * Validation: Particle
 ## Task List ##
-
 - [x] Create a git repository
 - [x] Create a directory structure
 - [ ] Strictly follow PSR naming conventions
 - [ ] Implement MVC architecture
 - [ ] Use HTTPFoundation from Symphony
-- [ ] Write the routing functionality (from scratch)
 - [ ] Use Swiftmailer (MIT license) 
-
 - [ ] Fix routing (Using symphony routing component, need to find something better or faster)
 - [ ] Port all framework related functions to a controller directory inside the framework sub-directory  
 - [ ] Write a small app so that users can test it
