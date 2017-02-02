@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	Hello {{name}}, you are getting old, now you are: {{age}} years old! <br/>
+	{% if age > 10 %}
+	<br> You are older than lot of people <br/>
+	{% endif %}
+
+	{% for user in users %}
+		{{user.name}} is {{user.age}} years old <br/>
+	{% endfor %}
+
+</body>
+</html>

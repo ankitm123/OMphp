@@ -11,7 +11,7 @@
 	/* Import functions  */
 	use function FastRoute\simpleDispatcher;
 
-	/* Create a simple dispatch object */
+	/* Create and return a simple dispatch object */
 	return simpleDispatcher(function (RouteCollector $r){
 		$r->addRoute('GET','/user','handler');
 	});
