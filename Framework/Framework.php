@@ -8,6 +8,7 @@
 
 	namespace Troodon;
 	use FastRoute\Dispatcher;
+	use Symfony\Component\HttpFoundation\Response;
 
 	class Framework{
 		protected $routeInfo;
@@ -22,8 +23,9 @@
 			/* Get the status code from the match, and handle the request */
 			switch ($this->routeInfo[0]) {
 				case Dispatcher::NOT_FOUND:
-					// Send 404 status code
-					// Load 404 page
+					(new Response())
+						->setStatusCode(404)
+						->send();
 					break;
 				case Dispatcher::METHOD_NOT_ALLOWED:
 					echo $this->routeInfo[1];
