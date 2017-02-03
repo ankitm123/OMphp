@@ -7,10 +7,12 @@
 	 */
 
 	namespace Troodon;
+
 	use FastRoute\Dispatcher;
 	use Symfony\Component\HttpFoundation\Response;
 
-	class Framework{
+	class Framework
+	{
 		protected $routeInfo;
 		protected $handler;
 		protected $vars;
@@ -28,12 +30,10 @@
 						->send();
 					break;
 				case Dispatcher::METHOD_NOT_ALLOWED:
-					echo $this->routeInfo[1];
-
-					// Not sure what to do with this
+					//Do something here (500?)
 					break;
 				case Dispatcher::FOUND:
-					if(is_callable($this->routeInfo[1])){
+					if (is_callable($this->routeInfo[1])) {
 						$this->routeInfo[1]();
 					}
 					$this->vars = $this->routeInfo[2];
@@ -44,5 +44,5 @@
 		}
 	}
 
-//	use werx\Config\{Providers\ArrayProvider, Container};
-//
+	//	use werx\Config\{Providers\ArrayProvider, Container};
+	//
