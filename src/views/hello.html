@@ -5,14 +5,16 @@
 	<title>Title</title>
 </head>
 <body>
-	Hello {{name}}, you are getting old, now you are: {{age}} years old! <br/>
-	{% if age > 10 %}
+	Hello {{ name }}, you are getting old, now you are: {{ age }} years old! <br/>
+	{ if age > 10 }
 	<br> You are older than lot of people <br/>
-	{% endif %}
+	{ endif }
 
-	{% for user in users %}
-		{{user.name}} is {{user.age}} years old <br/>
-	{% endfor %}
+	{ for user in users }
+		{{ user.name }} is {{ user.age }} years old <br/>
+	{ endfor }
+
+	{{ 'string' | md5 }}
 
 </body>
 </html>

@@ -1,4 +1,8 @@
 # One more PHP framework #
+
+## Why the name troodon ##
+Initially, the framework was called (the rather dull sounding) OMPHP, which stood fo 
+
 ## Motivation ##
 * Attempt to understand php better
 * Better understanding of MVC framework and other design patterns

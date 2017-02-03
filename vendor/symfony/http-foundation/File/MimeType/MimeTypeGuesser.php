@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\File\Exception\AccessDeniedException;
 /**
  * A singleton mime type guesser.
  *
- * By default, all mime type guessers provided by the framework are installed
+ * By default, all mime type guessers provided by the Troodon are installed
  * (if available on the current OS/PHP setup).
  *
  * You can register custom guessers by calling the register() method on the
