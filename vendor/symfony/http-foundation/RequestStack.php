@@ -65,7 +65,7 @@ class RequestStack
      * Gets the master Request.
      *
      * Be warned that making your code aware of the master request
-     * might make it un-compatible with other features of your Troodon
+     * might make it un-compatible with other features of your Framework
      * like ESI support.
      *
      * @return Request|null
@@ -83,7 +83,7 @@ class RequestStack
      * Returns the parent request of the current.
      *
      * Be warned that making your code aware of the parent request
-     * might make it un-compatible with other features of your Troodon
+     * might make it un-compatible with other features of your Framework
      * like ESI support.
      *
      * If current Request is the master request, it returns null.

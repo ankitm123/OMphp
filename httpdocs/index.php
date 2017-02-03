@@ -6,41 +6,36 @@
 	 * Time: 9:40 AM
 	 */
 
-	require_once '../Troodon/bootstrap.php';
+	/* This file should receive the request and delegate it to the framework class */
 
-	/* Create a troodon App */
-	//$app = new App;
-	/* Get http request method and URI from HTTPFoundation object  */
+	require_once '../vendor/autoload.php';
+	use Symfony\Component\HttpFoundation\Request;
+
+	$loader = new Twig_Loader_Filesystem('../src/views');
+
+	$twig = new Twig_Environment($loader);
+
+	$lexer = new Twig_Lexer($twig,[
+		'tag_block' => ['{','}'],
+		'tag_variable' => ['{{ ','}}'],
+	]);
+	$twig -> setLexer($lexer);
+
+	$request    = Request::createFromGlobals();
+
+	/* Get HTTP Method */
 	$httpMethod = $request->getMethod();
+
+	/* Identify the request */
 	$uri = $request->getRequestUri();
 
-	// Strip query string (?name=ankit) and decode URI
 	if (false !== $pos = strpos($uri, '?')) {
 		$uri = substr($uri, 0, $pos);
 	}
 	$uri = rawurldecode($uri);
 
+	/* Get the list of routes */
+	$dispatcher = include_once '../routes/routes.php';
 
-
-	/* Dispatch the simple dispatcher object */
-	$routeInfo = $dispatcher->dispatch($httpMethod, $uri);
-
-	switch ($routeInfo[0]) {
-		case FastRoute\Dispatcher::NOT_FOUND:
-			// Load 404 page
-			break;
-		case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
-			$allowedMethods = $routeInfo[1];
-			// Not sure what to do with this
-			break;
-		case FastRoute\Dispatcher::FOUND:
-			$handler = $routeInfo[1];
-			$vars = $routeInfo[2];
-			// ... call $handler with $vars
-			break;
-	}
-
-
-
-
-	//echo $view;
+	/* Instantiate the framework class in Troodon namespace */
+	$app = new Troodon\Framework($dispatcher, $httpMethod, $uri);

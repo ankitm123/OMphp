@@ -6,5 +6,13 @@
         "nikic/fast-route": "^1.1",
         "twig/twig": "^2.1",
         "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Troodon\\": "Framework/"
+        }
     }
+
 }
+
+

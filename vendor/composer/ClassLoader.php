@@ -19,7 +19,7 @@ namespace Composer\Autoload;
  *
  *     // register classes with namespaces
  *     $loader->add('Symfony\Component', __DIR__.'/component');
- *     $loader->add('Symfony',           __DIR__.'/Troodon');
+ *     $loader->add('Symfony',           __DIR__.'/framework');
  *
  *     // activate the autoloader
  *     $loader->register();
@@ -30,7 +30,7 @@ namespace Composer\Autoload;
  * In this example, if you try to use a class in the Symfony\Component
  * namespace or one of its children (Symfony\Component\Console for instance),
  * the autoloader will first look for the class under the component/
- * directory, and it will then fallback to the Troodon/ directory if not
+ * directory, and it will then fallback to the framework/ directory if not
  * found before giving up.
  *
  * This class is loosely based on the Symfony UniversalClassLoader.
