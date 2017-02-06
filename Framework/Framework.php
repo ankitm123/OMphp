@@ -19,7 +19,7 @@
 		protected $handler;
 		protected $vars;
 
-		public function __construct($dispatcher, $httpMethod, $uri, $twig, $request)
+		public function __construct($dispatcher, $httpMethod, $uri, $request)
 		{
 			/* Dispatch the dispatcher, a.k.a. match against the route collections */
 			$this->routeInfo = $dispatcher->dispatch($httpMethod, $uri);
@@ -27,10 +27,7 @@
 			/* Get the status code from the match, and handle the request */
 			switch ($this->routeInfo[0]) {
 				case Dispatcher::NOT_FOUND:
-					(new Response($twig
-						->render('404.twig')))
-						->setStatusCode(404)
-						->send();
+					//Put 404 page here
 					break;
 				case Dispatcher::METHOD_NOT_ALLOWED:
 					//Do something here (500?)

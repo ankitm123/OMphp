@@ -12,15 +12,7 @@
 	use Symfony\Component\HttpFoundation\Request;
 	use werx\Config\{Providers\ArrayProvider, Container};
 
-	$loader = new Twig_Loader_Filesystem('../src/views');
 
-	$twig = new Twig_Environment($loader);
-
-	$lexer = new Twig_Lexer($twig,[
-		'tag_block' => ['{','}'],
-		'tag_variable' => ['{{ ','}}'],
-	]);
-	$twig -> setLexer($lexer);
 
 	$request    = Request::createFromGlobals();
 
@@ -40,4 +32,4 @@
 
 
 	/* Instantiate the framework class in Troodon namespace */
-	$app = new Troodon\Framework($dispatcher, $httpMethod, $uri, $twig, $request);
+	$app = new Troodon\Framework($dispatcher, $httpMethod, $uri, $request);
