@@ -1,7 +1,8 @@
 # One more PHP framework #
 
-## Why the name troodon ##
-Initially, the framework was called (the rather dull sounding) OMPHP, which stood fo 
+## What is a troodon? ##
+Troodon was one of the smartest dinosaurs ever to have walked the earth.  
+
 
 ## Motivation ##
 * Attempt to understand php better
@@ -11,8 +12,9 @@ Initially, the framework was called (the rather dull sounding) OMPHP, which stoo
 
 ## Framework components ##
 Tentative list (subject to change):
-* Request and Response handling: Symphony Foundation
-* Routing: FastRoute
+* Request and Response handling: Symphony HTTPFoundation
+* Routing: FastRoute (Nikic)
+* Controller Resolver: Symphony HTTPKernel
 * Templating: Twig
 * Handling configuration: Werx
 * Email: Swiftmailer

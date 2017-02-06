@@ -10,6 +10,7 @@
 
 	require_once '../vendor/autoload.php';
 	use Symfony\Component\HttpFoundation\Request;
+	use werx\Config\{Providers\ArrayProvider, Container};
 
 	$loader = new Twig_Loader_Filesystem('../src/views');
 
@@ -37,5 +38,6 @@
 	/* Get the list of routes */
 	$dispatcher = include_once '../routes/routes.php';
 
+
 	/* Instantiate the framework class in Troodon namespace */
-	$app = new Troodon\Framework($dispatcher, $httpMethod, $uri);
+	$app = new Troodon\Framework($dispatcher, $httpMethod, $uri, $twig, $request);
